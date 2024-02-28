@@ -3,7 +3,48 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/styles.css" />
+    <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
+    <title>Weather application</title>
   </head>
-  <body></body>
+  <body>
+    <div class="weather-app">
+    <header>
+      <form id="input-form-city">
+      <input type="text" placeholder="Enter a city..." required class="search-input" id="search-city-input"/>
+      <input type="submit" class="search-button" id="search-button-input" value="Search"/>
+    </form>
+  </header>
+  <main>
+    <div class="current-weather">
+      <div>
+    <h1 class="current-city" id="current-city-weather">Leeds</h1>
+    <p class="current-details">
+      <span id="current-date-time">Wednesday 15:07</span>, partly cloudy <br />
+      Humidity:<strong>64%</strong>, Wind <strong>26 km/h</strong>
+    </p>
+  </div>
+    <div class="current-temperature">
+      <span class="current-temperature-icon">⛅</span>
+      <span class="current-temperature-value" id="current-temperature-number">10</span>
+      <span class="current-temperature-unit">°C</span>
+    </div>
+  </div>
+</main>
+    <footer>  
+      <p>
+      This project was coded by
+      <a href="#" target="_blank">Anna Serra</a> and is
+      <a href="#" target="_blank"> on GitHub</a> and
+      <a href="#" target="_blank">hosted on Netlify</a>
+    </p>
+  </footer>
+  </body>
+  <script src="src/script.js"></script>
 </html>
